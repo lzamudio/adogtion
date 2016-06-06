@@ -236,14 +236,6 @@
         <div class="col-md-6">
             <p>&copy; aDOGtion SOFTWARE 2016</p>
         </div>
-        <div class="col-md-3">
-            <ul class="list-inline">
-                <li><a href="http://forbetterweb.com/"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
-                <li><a href="http://forbetterweb.com/"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
-                <li><a href="http://forbetterweb.com/"><i class="fa fa-instagram fa-fw fa-2x"></i></a></li>
-                <li><a href="http://forbetterweb.com/"><i class="fa fa-envelope fa-fw fa-2x"></i></a></li>
-            </ul>
-        </div>
     </div>
 </section>
 

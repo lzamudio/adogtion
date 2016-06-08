@@ -15,7 +15,8 @@ Bootstrap 3
 Apache 2.4
 CentOS
 
-Base de datos: 
+Base de datos:
+
 DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (
@@ -71,6 +72,7 @@ CREATE TABLE `pet_vaccine` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 **Nota importante**
+
 Si se desea probar el proyecto de manera local, es necesario configurar la 
 salida de correo como SMTP en el archivo application/helpers/app_helper.php 
 en la función "sendMail" 

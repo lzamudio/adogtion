@@ -27,11 +27,12 @@ class Publications extends BaseController {
         }
         $this->form_validation->set_rules('name', 'Nombre', 'required|trim');
         $this->form_validation->set_rules('especie', 'Especie', 'required|trim');
-        $this->form_validation->set_rules('age', 'Edad', 'required|trim');
+        $this->form_validation->set_rules('age', 'Edad', 'required|trim|is_natural');
+        $this->form_validation->set_rules('type_age', '', 'required|trim');
         $this->form_validation->set_rules('sex', 'Sexo', 'required|trim');
         $this->form_validation->set_rules('breed', 'Raza', 'required|trim');
         $this->form_validation->set_rules('sterilization', 'Esterilización');
-        $this->form_validation->set_rules('size', 'Tamaño', 'required|trim');
+        $this->form_validation->set_rules('size', 'Talla', 'required|trim');
         $this->form_validation->set_rules('address', 'Dirección', 'trim|required');
         $this->form_validation->set_rules('vaccine', 'Vacunas');
         
@@ -98,7 +99,7 @@ class Publications extends BaseController {
             
             $data['name'] = $this->input->post('name');
             $data['especie'] = $this->input->post('especie');
-            $data['age'] = $this->input->post('age');
+            $data['age'] = $this->input->post('age').'-'.$this->input->post('type_age');
             $data['sex'] = $this->input->post('sex');
             $data['breed'] = $this->input->post('breed');
             $data['sterilization'] = (bool)$this->input->post('sterilization');
@@ -120,6 +121,6 @@ class Publications extends BaseController {
             
         }
         
-    }    
-
+    }
+    
 }

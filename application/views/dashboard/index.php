@@ -17,7 +17,7 @@
     var circle, center, map, marker;
     var markers = [];
 
-    function showMap(position) {
+    function showMap() {
         center = new google.maps.LatLng('19.4314969', '-99.1356256');
 
         map = new google.maps.Map(document.getElementById('map'), {

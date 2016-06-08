@@ -18,11 +18,11 @@ class Dashboard extends BaseController {
     
     public function profile(){
         $data['user'] = $this->user_model->get($this->session->user->id);
-        
+              
         $this->form_validation->set_rules('first_name', 'Nombre (s)', 'required');
         $this->form_validation->set_rules('last_name', 'Apellidos (s)', 'required');
         $this->form_validation->set_rules('email', 'Correo', 'required|valid_email');
-        $this->form_validation->set_rules('phone', 'Teléfono', 'required');
+        $this->form_validation->set_rules('phone', 'Teléfono', 'required|is_natural|exact_length[10]');
         
         if($this->input->post('password')){
             $this->form_validation->set_rules('password', 'Contraseña', 'required|trim|sha1');
@@ -53,7 +53,7 @@ class Dashboard extends BaseController {
             if ($last_id = $this->user_model->save($save)) {
                 $this->session->set_userdata(['user' => (object) $save]);
                 
-                $this->session->set_flashdata('message', 'Se actualizo correctamente tus datos.');
+                $this->session->set_flashdata('message', 'Se actualizó correctamente tus datos.');
                 redirect('dashboard/profile');
             } else {
                 $this->session->set_flashdata('error', 'No se pudo realizar el registro, intenta más tarde');

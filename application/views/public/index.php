@@ -144,7 +144,7 @@
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
-                            <input type="text" class="form-control input-lg" placeholder="Teléfono *" id="name" name="phone" required="">
+                            <input type="text" class="form-control input-lg" placeholder="Teléfono (10 dígitos) *" id="name" name="phone" required="">
                             <span class="help-block text-danger"></span>
                         </div>
                     </div>

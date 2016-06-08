@@ -89,7 +89,7 @@ class Welcome extends CI_Controller {
         $this->form_validation->set_rules('first_name', 'Nombre (s)', 'required');
         $this->form_validation->set_rules('last_name', 'Apellidos (s)', 'required');
         $this->form_validation->set_rules('email', 'Correo', 'required|valid_email');
-        $this->form_validation->set_rules('phone', 'Teléfono', 'required');
+        $this->form_validation->set_rules('phone', 'Teléfono', 'required|is_natural|exact_length[10]');
         $this->form_validation->set_rules('password', 'Contraseña', 'required|trim|sha1');
         $this->form_validation->set_rules('passconf', 'Confirmar Contraseña', 'required|trim|sha1|matches[password]');
 

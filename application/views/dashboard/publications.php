@@ -24,7 +24,7 @@
                         </thead>
                         <tbody>
                             <?php foreach ($publicaciones as $publicacion): ?>
-                                <tr <?= !$publicacion->approved & $publicacion->user_request ? 'class="warning"' : ''; ?>>
+                                <tr <?= !$publicacion->approved && $publicacion->user_request ? 'class="warning"' : ''; ?>>
                                     <td><?= $publicacion->name ?></td>
                                     <td><?= $publicacion->especie ?></td>
                                     <td><?= $publicacion->age ?></td>
@@ -34,7 +34,7 @@
                                     <td>
                                         <?php if($publicacion->approved): ?>
                                         <label class="label label-success">Adoptado</label>
-                                        <?php elseif(!$publicacion->approved & $publicacion->user_request): ?>
+                                        <?php elseif(!$publicacion->approved && $publicacion->user_request): ?>
                                         <button class="btn btn-info btn-xs" onclick="verSolicitud(<?= $publicacion->user_request ?>, <?= $publicacion->id ?>);">Ver solicitante</button>
                                         <?php else: ?>
                                         <label class="label label-warning">En espera de solicitud</label>

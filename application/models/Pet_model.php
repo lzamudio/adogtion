@@ -6,10 +6,10 @@ class Pet_model extends CI_Model {
         parent::__construct();
     }
     
-    public function search_pets($lat, $lng, $radius, $user_id){
+    public function search_pets($lat, $lng, $radius){
         $sql = "SELECT id, address, name, lat, lng, ( 6371392 * acos( cos( radians(".$this->db->escape($lat).") ) * cos( radians( lat ) ) * cos( radians( lng ) - radians(".$this->db->escape($lng).") ) + sin( radians(".$this->db->escape($lat).") ) * sin( radians( lat ) ) ) ) AS distance 
                 FROM pets 
-                WHERE user_id != ".$this->db->escape($user_id)." AND user_request IS NULL 
+                WHERE  user_request IS NULL 
                 HAVING distance <=  ".$this->db->escape($radius);
         
         $query = $this->db->query($sql);

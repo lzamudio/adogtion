@@ -83,7 +83,10 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <?php if($this->session->user->id != $pet->user_id): ?>
             <button type="button" class="btn btn-danger" id="btnRequest" onclick="solicitarAdopcion(<?= $pet->id ?>)">Solicitar Adopción</button>
+            <?php endif; ?>
+            
         </div>
     </div>
 </div>

@@ -117,9 +117,15 @@
                     }
 
                 });
-            });
+            }, errorGeolocation);
+        }else{
+            alert('No se ha podido obtener tu ubicación ya que tu navegador no soporta está funcionalidad (Intenta con Firefox)');
         }
     }
+    function errorGeolocation(){
+        alert('No se ha podido obtener tu ubicación por un error, tu navegador no soporta esta funcionalidad (Intenta con Firefox)');
+    }
+        
     function searchLocationNear(obj){
         $("#loadGif").show();
         var geocoder = new google.maps.Geocoder();

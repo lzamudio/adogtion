@@ -4,7 +4,7 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Agregar publicaciones</h3>
+                    <h3 class="panel-title"><?= $id? 'Editar': 'Agregar' ?> publicación</h3>
                 </div>
                 <div class="panel-body">
                     <form enctype="multipart/form-data" method="post" action="<?= base_url('publications/add/'.$id) ?>" >

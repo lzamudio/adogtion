@@ -18,7 +18,6 @@ class Publications extends BaseController {
     
     public function adoptions(){
         $data['adoptions'] = $this->pet_model->get_adoptions($this->session->user->id);
-//        _dump($data['adoptions']);die;
         $this->view('adoptions', $data);
     }
     
@@ -121,6 +120,6 @@ class Publications extends BaseController {
             
         }
         
-    }
+    }    
 
 }

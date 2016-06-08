@@ -74,7 +74,7 @@ class Dashboard extends BaseController {
     }
 
     public function search_pet($lat, $lng, $radius){
-        echo json_encode($this->pet_model->search_pets($lat, $lng, $radius, $this->session->user->id));
+        echo json_encode($this->pet_model->search_pets($lat, $lng, $radius));
         
     }
     

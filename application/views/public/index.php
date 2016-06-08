@@ -83,7 +83,7 @@
         <p class="intro-text wow fadeIn" data-wow-duration="7s" data-wow-delay=".7s">aDOGtion SOFTWARE</p>
         <ul class="list-inline lead">
             <li><a href="#adopta" class="btn btn-border btn-lg page-scroll wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s"><i class="fa fa-chevron-down"></i> ADOPTA</a></li>
-            <li><a href="#contacto" class="btn btn-white btn-lg page-scroll wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.4s"><i class="fa fa-chevron-down"></i> REGÍSTRATE</a></li>
+            <li><a href="#registrate" class="btn btn-white btn-lg page-scroll wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.4s"><i class="fa fa-chevron-down"></i> REGÍSTRATE</a></li>
         </ul>
     </div>
 </header>

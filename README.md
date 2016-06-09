@@ -1,10 +1,15 @@
 Proyecto final para el curso de Riesgo Tecnológico de la Facultad de Ciencias de la UNAM.
 
 Integrantes del equipo:
+
 Luis Enrique Zamudio Cervantes
+
 Camacho González Pablo
+
 Gónzalez Huerta Francisco Javier
+
 Mayesell Colorado Sergio
+
 Martínez Martínez Julio César
 
 
@@ -15,7 +20,7 @@ Bootstrap 3
 Apache 2.4
 CentOS
 
-Base de datos:
+Script para base de datos:
 
 DROP TABLE IF EXISTS `users`;
 
@@ -29,10 +34,6 @@ CREATE TABLE `users` (
   `reset_password` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
-
 
 DROP TABLE IF EXISTS `pets`;
 
@@ -75,4 +76,4 @@ CREATE TABLE `pet_vaccine` (
 
 Si se desea probar el proyecto de manera local, es necesario configurar la 
 salida de correo como SMTP en el archivo application/helpers/app_helper.php 
-en la función "sendMail" 
+en la función "sendMail" . Además de cambiar la configuración para la conexión en la base de datos ubicado en el archivo application/config/database.php

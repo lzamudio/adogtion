@@ -1,6 +1,8 @@
-Proyecto final para el curso de Riesgo Tecnológico de la Facultad de Ciencias de la UNAM.
+**Proyecto final para el curso de Riesgo Tecnológico de la Facultad de Ciencias de la UNAM.**
 
-Integrantes del equipo:
+
+
+**Integrantes del equipo:**
 
 Luis Enrique Zamudio Cervantes
 
@@ -13,14 +15,20 @@ Mayesell Colorado Sergio
 Martínez Martínez Julio César
 
 
-Especificaciones técnicas:
+**Especificaciones técnicas:**
+
 CodeIgniter 3
+
 MySQL 5.6
+
 Bootstrap 3
+
 Apache 2.4
+
 CentOS
 
-Script para base de datos:
+
+**Script para base de datos:**
 
 DROP TABLE IF EXISTS `users`;
 

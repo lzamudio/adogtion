@@ -57,7 +57,17 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">Sexo *</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" name="sex" value="<?= set_value('sex', $sex); ?>">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="radio" <?=  $sex == 'Macho' ? 'checked=""': ''; ?> name="sex" value="Macho"> Macho
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="radio" <?=  $sex == 'Hembra' ? 'checked=""': ''; ?> name="sex" value="Hembra"> Hembra
+                                            </label>
+                                        </div>
+                                        <!--<input type="text" class="form-control" name="sex" value="<?= set_value('sex', $sex); ?>">-->
                                     </div>
                                 </div>
                                 <div class="form-group">

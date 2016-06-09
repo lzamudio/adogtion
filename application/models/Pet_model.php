@@ -38,6 +38,11 @@ class Pet_model extends CI_Model {
         return true;
     }
     
+    public function delete($id){
+        $this->db->delete('pets',['id' => $id]);
+        $this->db->delete('pet_vaccine',['pet_id' => $id]);
+    }
+    
     public function get($id){
         $pet = $this->db->get_where('pets',['id' => $id])->row();
         if($pet){

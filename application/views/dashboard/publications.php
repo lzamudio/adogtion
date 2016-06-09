@@ -46,7 +46,7 @@
                                             <?php if(!$publicacion->approved && !$publicacion->user_request): ?>
                                                 <a href="<?= base_url('publications/add/' . $publicacion->id) ?>" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit"></i></a>
                                             <?php endif; ?>
-                                                <a href="<?= base_url('publications/delete/'.$publicacion->id); ?>" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></a>
+                                                <a href="<?= base_url('publications/delete/'.$publicacion->id); ?>" class="btn btn-danger btn-xs" onclick="return confirm('¿Estás seguro de querer eliminar esta publicación?');"><i class="glyphicon glyphicon-trash"></i></a>
                                         </div>
                                     </td>
                                 </tr>

@@ -16,6 +16,12 @@ class Publications extends BaseController {
         $this->view('publications', $data);
     }
     
+    public function delete($id) {
+        $this->pet_model->delete($id);
+        $this->session->set_flashdata('message', 'Se borro correctamente la publicación');
+        redirect('publications');
+    }
+    
     public function adoptions(){
         $data['adoptions'] = $this->pet_model->get_adoptions($this->session->user->id);
         $this->view('adoptions', $data);
@@ -109,6 +115,10 @@ class Publications extends BaseController {
             $data['sterilization'] = (bool)$this->input->post('sterilization');
             $data['size'] = $this->input->post('size');
             $data['address'] = $this->input->post('address');
+            
+            if(!$id){
+                $data['date_register'] = date('Y-m-d h:i');    
+            }
             
             $vaccines = [];
             if(is_array( $this->input->post('vaccine'))){

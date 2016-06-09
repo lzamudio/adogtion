@@ -83,7 +83,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label">Esterilización *</label>
+                                    <label class="col-sm-3 control-label">Esterilización </label>
                                     <div class="col-sm-9">
                                         <div class="checkbox">
                                             <label>

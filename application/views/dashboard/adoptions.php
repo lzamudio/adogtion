@@ -23,7 +23,7 @@
                         </thead>
                         <tbody>
                             <?php foreach ($adoptions as $adoption): ?>
-                                <tr <?= $adoption->approved ? 'class="success"' : ''; ?>>
+                                <tr <?= !$adoption->approved ? 'class="warning"' : ''; ?>>
                                     <td><?= $adoption->name ?></td>
                                     <td><?= $adoption->especie ?></td>
                                     <td><?= $adoption->age ?></td>

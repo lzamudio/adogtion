@@ -24,14 +24,14 @@
             </div>
             <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
-                    <input type="text" class="form-control input-lg" placeholder="Teléfono *" id="name" name="phone" required="" value="<?= set_value('phone', $user->phone) ?>">
+                    <input type="text" class="form-control input-lg" placeholder="Teléfono (10 dígitos)*" id="name" name="phone" required="" value="<?= set_value('phone', $user->phone) ?>">
                     <span class="help-block text-danger"></span>
                 </div>
             </div>
             <p class="help-block">Si no deseas actualizar tu contraseña, manten los siguientes campos en blanco.</p>
             <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
-                    <input type="password" class="form-control input-lg" placeholder="Contraseña " id="name" name="password" >
+                    <input type="password" class="form-control input-lg" placeholder="Contraseña (mínimo 6 caracteres)" id="name" name="password" >
                     <span class="help-block text-danger"></span>
                 </div>
             </div>

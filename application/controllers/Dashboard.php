@@ -25,7 +25,7 @@ class Dashboard extends BaseController {
         $this->form_validation->set_rules('phone', 'Teléfono', 'required|is_natural|exact_length[10]');
         
         if($this->input->post('password')){
-            $this->form_validation->set_rules('password', 'Contraseña', 'required|trim|sha1');
+            $this->form_validation->set_rules('password', 'Contraseña', 'required|trim|min_length[6]|sha1');
             $this->form_validation->set_rules('passconf', 'Confirmar Contraseña', 'required|trim|sha1|matches[password]');
         }
         

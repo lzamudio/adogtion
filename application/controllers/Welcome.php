@@ -23,7 +23,7 @@ class Welcome extends CI_Controller {
             show_404();
         }
         
-        $this->form_validation->set_rules('password', 'Contraseña', 'required|trim|sha1');
+        $this->form_validation->set_rules('password', 'Contraseña', 'required|trim|min_length[6]|sha1');
         $this->form_validation->set_rules('passconf', 'Confirmar Contraseña', 'required|trim|sha1|matches[password]');
 
         if ($this->form_validation->run() == FALSE) {
@@ -90,8 +90,8 @@ class Welcome extends CI_Controller {
         $this->form_validation->set_rules('last_name', 'Apellidos (s)', 'required');
         $this->form_validation->set_rules('email', 'Correo', 'required|valid_email');
         $this->form_validation->set_rules('phone', 'Teléfono', 'required|is_natural|exact_length[10]');
-        $this->form_validation->set_rules('password', 'Contraseña', 'required|trim|sha1');
-        $this->form_validation->set_rules('passconf', 'Confirmar Contraseña', 'required|trim|sha1|matches[password]');
+        $this->form_validation->set_rules('password', 'Contraseña', 'required|trim|min_length[6]|sha1');
+        $this->form_validation->set_rules('passconf', 'Confirmar Contraseña', 'required|trim|min_length[6]|sha1|matches[password]');
 
         if ($this->form_validation->run() == FALSE) {
             echo validation_errors();

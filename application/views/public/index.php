@@ -95,7 +95,7 @@
         <div class="col-lg-10 col-lg-offset-1">
             <h2>¿Quieres adoptar una mascota cerca de tu zona?</h2>
             
-            <p><a href="#" data-toggle="modal" data-target="#login">Inicia sesión</a> y encuentra a tu mascota ideal cerca de tu ubicación o del lugar que tu elijas</p>
+            <p><a href="#" data-toggle="modal" data-target="#login">Inicia sesión</a> y encuentra a tu mascota ideal cerca de tu ubicación o del lugar que tu elijas.</p>
         </div>
     </div>
 </section>
@@ -121,6 +121,7 @@
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3">
                 <p>Regístrate y pon en adopción o adopta una mascota.</p>
+                <p>Todos los campos con (*) son obligatorios.</p>
                 <form id="registerUser" novalidate="" onsubmit="return register();">
                     <div class="alert alert-danger text-left" id="errorRegister" style="display: none">
                     </div>
@@ -150,7 +151,7 @@
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
-                            <input type="password" class="form-control input-lg" placeholder="Contraseña *" id="name" name="password" required="">
+                            <input type="password" class="form-control input-lg" placeholder="Contraseña (mínimo 6 caracteres) *" id="name" name="password" required="">
                             <span class="help-block text-danger"></span>
                         </div>
                     </div>
@@ -190,7 +191,7 @@
                 <p>Si aún no estas seguro de como es el proceso de adopción en aDOGtion o
                     no sabes como poner en adopción a tu mascota, envianos un correo y pronto te ayudaremos
                     a despejar todas tus inquietudes.</p>
-                <h4><i class="icon ion-android-mail"></i> adogtion.software@sumawebdesarrollo.com<br>
+                <h5><i class="icon ion-android-mail"></i> adogtion.software@sumawebdesarrollo.com<br></h5>
             </div>
             <div class="col-md-5 col-md-offset-2">
                 <h2>Contacto</h2>

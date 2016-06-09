@@ -37,10 +37,11 @@ CREATE TABLE `users` (
   `first_name` varchar(200) DEFAULT NULL,
   `last_name` varchar(200) DEFAULT NULL,
   `email` varchar(150) DEFAULT NULL,
-  `phone` varchar(100) DEFAULT NULL,
-  `password` varchar(150) DEFAULT '',
+  `phone` varchar(10) DEFAULT NULL,
+  `password` varchar(50) DEFAULT '',
   `reset_password` varchar(200) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `pets`;

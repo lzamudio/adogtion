@@ -47,6 +47,8 @@ class Publications extends BaseController {
         $data['sterilization'] = '';
         $data['size'] = '';
         $data['address'] = '';
+        $data['lat'] = '';
+        $data['lng'] = '';
         
         $data['vaccines'] = [];
         
@@ -63,6 +65,8 @@ class Publications extends BaseController {
                 $data['sterilization'] = $pet->sterilization;
                 $data['size'] = $pet->size;
                 $data['address'] = $pet->address;
+                $data['lat'] = $pet->lat;
+                $data['lng'] = $pet->lng;
                 $data['vaccines'] = $pet->vaccines;
             }
         }

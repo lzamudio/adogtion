@@ -63,7 +63,7 @@
                             <span class="help-block text-danger"></span>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-dark btn-block">Registrarme</button>
+                    <button type="submit" class="btn btn-dark btn-block">Cambiar contraseña</button>
                 </form>
             </div>
         </div>

@@ -41,7 +41,7 @@
                                         <?php endif; ?>
                                         
                                     </td>
-                                    <td>
+                                    <td width="8%">
                                         <div class="btn-group" role="group" >
                                             <?php if(!$publicacion->approved && !$publicacion->user_request): ?>
                                                 <a href="<?= base_url('publications/add/' . $publicacion->id) ?>" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit"></i></a>

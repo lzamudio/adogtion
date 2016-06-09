@@ -124,7 +124,7 @@
                                 <button type="submit" class="btn btn-success btn-block">Guardar</button>
                             </div>
                             <div class="col-md-6">
-                                <button type="submit" class="btn btn-primary btn-block">Cancelar</button>
+                                <a href="<?= base_url('publications'); ?>" class="btn btn-primary btn-block">Cancelar</a>
                             </div>
                         </div>
                     </form>
@@ -163,7 +163,10 @@
             position: center,
             map: map
         });
-
+        
+        <?php if($address): ?>
+               changeCenter('<?= $address ?>', <?= $lat ?>, <?= $lng ?>);
+        <?php endif; ?>
     }
     
     function changeCenter(address, lat, lng){

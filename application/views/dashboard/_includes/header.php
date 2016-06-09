@@ -42,9 +42,11 @@
                     </ul>
                     <form class="navbar-form navbar-left" role="search" id="formSearchLocation" onsubmit="return searchLocationNear($('#inputSearchLocation'))" method="get" action="<?= base_url('dashboard'); ?>">
                         <div class="input-group" style="width: 400px">
-                            <input type="text" class="form-control" id="inputSearchLocation" placeholder="(ej: Coyoacán, Ciudad de México)"name="search" value="<?= $this->input->get('search') ?>">
+                            <input type="text" class="form-control" id="inputSearchLocation" placeholder="(ej: Coyoacán, Ciudad de México)" name="search" value="<?= $this->input->get('search') ?>">
                             <span class="input-group-btn">
+                                <?php if($this->uri->segment(1) == 'dashboard' && !$this->uri->segment(2)): ?>
                                 <button class="btn btn-default" type="button" onclick="getMyLocation();"><i class="fa fa-location-arrow "></i></button>
+                                <?php endif; ?>
                                 <button class="btn btn-default" type="submit"  ><i class="glyphicon glyphicon-search "></i></button>
                             </span>
                         </div>
